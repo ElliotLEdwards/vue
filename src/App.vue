@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <Navbar />
     <Header />
     <AddTodo v-on:add-todo="addTodo" />
     <Todos v-bind:todos="todos" v-on:del-todo="deleteTodo" />
@@ -10,6 +11,7 @@
 import Header from './components/layout/Header'
 import Todos from './components/Todos'
 import AddTodo from './components/AddTodo'
+import Navbar from './components/layout/Navbar'
 import axios from 'axios'
 
 export default {
@@ -17,6 +19,7 @@ export default {
   components: {
     Todos,
     Header,
+    Navbar,
     AddTodo
   },
   data() {
