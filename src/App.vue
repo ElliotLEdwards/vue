@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <Navbar />
     <Header />
     <AddTodo v-on:add-todo="addTodo" />
     <Todos v-bind:todos="todos" v-on:del-todo="deleteTodo" />
@@ -9,7 +8,6 @@
 
 <script>
 import Header from './components/layout/Header'
-import Navbar from './components/layout/Navbar'
 import Todos from './components/Todos'
 import AddTodo from './components/AddTodo'
 import axios from 'axios'
@@ -19,7 +17,6 @@ export default {
   components: {
     Todos,
     Header,
-    Navbar,
     AddTodo
   },
   data() {
@@ -68,7 +65,6 @@ export default {
 </script>
 
 <style>
-  @import './assets/styles/navbar.css';
   @import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap';
 
 
