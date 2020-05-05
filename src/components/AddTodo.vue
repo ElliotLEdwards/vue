@@ -1,9 +1,11 @@
 <template>
-    <div>
-        <form @submit="addTodo">
-            <input type="text" v-model="title" name="title" placeholder="Add Todo...">
-            <input type="submit" value="Submit" class="btn">
-        </form>
+    <div class="card bg-light m-3">
+        <div class="card-body">
+            <form>
+                <input class="m-2" type="text" v-model="title" name="title" placeholder="Add Todo...">
+                <button @click="addTodo" type="button" value="Submit" class="m-2 btn btn-primary">Submit</button>
+            </form>
+        </div>
     </div>
 </template>
 
@@ -41,8 +43,5 @@ export default {
     input[type="text"] {
         flex: 10;
         padding: 5px;
-    }
-    input[type="submit"] {
-        flex: 2;
     }
 </style>

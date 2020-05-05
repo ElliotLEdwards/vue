@@ -2,8 +2,10 @@
   <div id="app">
     <Navbar />
     <Header />
-    <AddTodo v-on:add-todo="addTodo" />
-    <Todos v-bind:todos="todos" v-on:del-todo="deleteTodo" />
+    <div class="d-flex flex-column">
+      <AddTodo class="p-2" v-on:add-todo="addTodo" />
+      <Todos class="p-2" v-bind:todos="todos" v-on:del-todo="deleteTodo" />
+    </div>
   </div>
 </template>
 
@@ -12,7 +14,6 @@ import Header from './components/layout/Header'
 import Todos from './components/Todos'
 import AddTodo from './components/AddTodo'
 import Navbar from './components/layout/Navbar'
-import axios from 'axios'
 
 export default {
   name: 'App',
@@ -25,21 +26,7 @@ export default {
   data() {
     return {
       todos: [
-        {
-          id: 1,
-          title: "Todo one",
-          completed: false
-        },
-         {
-          id: 2,
-          title: "Todo two",
-          completed: false
-        },
-         {
-          id: 3,
-          title: "Todo three",
-          completed: false
-        }
+      
       ]
     }
   },
@@ -49,20 +36,7 @@ export default {
     },
     addTodo(newTodo) {
       this.todos = [...this.todos, newTodo];
-
-      const { title, completed } = newTodo;
-      axios.post('https://jsonplaceholder.typicode.com/todos', {
-        title,
-        completed
-      })
-        .then(res => this.todos = res.data)
-        .catch(err => console.log(err))
     }
-  },
-  created() {
-    axios.get('https://jsonplaceholder.typicode.com/todos?_limit=10')
-      .then(res => this.todos = res.data)
-      .catch(err => console.log(err))
   }
 }
 </script>
