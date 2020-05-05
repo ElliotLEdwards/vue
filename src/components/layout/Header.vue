@@ -1,12 +1,19 @@
 <template>
     <header class="header">
-        <h1>Todo List</h1>
+        <h1><font-awesome-icon :icon="['fas', 'list']" /> Todo List</h1>
     </header>
 </template>
 
 <script>
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faList } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+library.add(faList)
 export default {
-    name: "Header"
+    name: "Header",
+    components: {
+        FontAwesomeIcon
+    }
 }
 </script>
 
