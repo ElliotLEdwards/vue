@@ -1,5 +1,9 @@
 <template>
     <div>
+        <Header />
+        <div class="d-flex flex-column">
+            <AddTodo class="p-2" v-on:add-todo="addTodo" />
+        </div>
         <div v-bind:key="todo.id" v-for="todo in todos">
             <TodoItem v-bind:todo="todo" v-on:del-todo="$emit('del-todo', todo.id)" />
         </div>
@@ -8,13 +12,29 @@
 
 <script>
 import TodoItem from './TodoItem'
+import Header from './layout/Header'
+import AddTodo from './AddTodo'
 
 export default {
     name: "Todos",
     components: {
-        TodoItem
+        TodoItem,
+        Header,
+        AddTodo
     },
-    props: ["todos"]
+    methods: {
+        deleteTodo(id) {
+            this.todos = this.todos.filter(todo => todo.id !== id)
+        },
+        addTodo(newTodo) {
+            this.todos = [...this.todos, newTodo];
+        }
+    },
+    data() {
+        return {
+            todos: []
+        }
+    }
 }
 </script>
 
