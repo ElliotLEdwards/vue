@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import VueRouter from 'vue-router';
 import Todos from './components/Todos';
 import Home from './components/Home';
+import About from './components/About';
 
 Vue.use(VueRouter)
 
@@ -20,6 +21,10 @@ const routes = [
   {
     path: '/home',
     component: Home
+  },
+  {
+    path: '/about',
+    component: About
   }
 ]
 
