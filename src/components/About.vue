@@ -1,6 +1,6 @@
 <template>
     <div>
-        <p class="display-4 pl-4 pt-4"><font-awesome-icon :icon="['fas', 'tools']" size="sm" :style="{ color: '#007BFF' }"  /> Tools.</p>
+        <p class="display-4 pl-4 pt-4"><font-awesome-icon :icon="['fas', 'tools']" size="sm" :style="{ color: '#553c7b' }"  /> Tools.</p>
         <div class="card-deck p-4">
             <div class="card p-2">
                 <div class="d-flex justify-content-center"><font-awesome-icon :icon="['fab', 'bootstrap']" size="10x" :style="{ color: '#553c7b' }"  /></div>

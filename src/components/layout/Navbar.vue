@@ -1,7 +1,7 @@
 <template>
    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <a class="navbar-brand" style="color=#42b883">
-            <font-awesome-icon :icon="['fab', 'vuejs']" />
+            <font-awesome-icon :icon="['fas', 'space-shuttle']" />
                 Elliot Edwards
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,9 +33,9 @@
 
 <script>
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faVuejs } from '@fortawesome/free-brands-svg-icons'
+import { faSpaceShuttle } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-library.add(faVuejs)
+library.add(faSpaceShuttle)
 
 //Vue.component('font-awesome-icon', FontAwesomeIcon)
 
