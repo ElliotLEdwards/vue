@@ -6,6 +6,8 @@ import VueRouter from 'vue-router';
 import Todos from './components/Todos';
 import Home from './components/Home';
 import About from './components/About';
+import Spotify from './components/Spotify.vue';
+import Ip from './components/Ip.vue'
 
 Vue.use(VueRouter)
 
@@ -25,6 +27,14 @@ const routes = [
   {
     path: '/about',
     component: About
+  },
+  {
+    path: '/Spotify',
+    component: Spotify
+  },
+  {
+    path: '/Ip',
+    component: Ip
   }
 ]
 

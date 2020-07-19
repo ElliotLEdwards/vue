@@ -21,6 +21,16 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link">
+                        <router-link class="text-light" to="/spotify">Spotify</router-link>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">
+                        <router-link class="text-light" to="/ip">IP address</router-link>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">
                         <router-link class="text-light" to="/about">About</router-link>
                     </a>
                 </li>
