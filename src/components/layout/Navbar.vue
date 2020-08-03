@@ -16,6 +16,11 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link">
+                        <router-link class="text-light" to="/CV">CV</router-link>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">
                         <router-link class="text-light" to="/todos">Todos</router-link>
                     </a>
                 </li>

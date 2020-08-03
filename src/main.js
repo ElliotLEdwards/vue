@@ -8,6 +8,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Spotify from './components/Spotify.vue';
 import Ip from './components/Ip.vue'
+import Cv from './components/Cv.vue'
 
 Vue.use(VueRouter)
 
@@ -35,6 +36,10 @@ const routes = [
   {
     path: '/Ip',
     component: Ip
+  },
+  {
+    path: '/CV',
+    component: Cv
   }
 ]
 
