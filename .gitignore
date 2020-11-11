@@ -2,3 +2,4 @@ node_modules/
 dist/
 vue.code-workspace
 mep
+.DS_Store
