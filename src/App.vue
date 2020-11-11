@@ -1,6 +1,6 @@
 <template>
   <div id="app" class="d-flex flex-column" style="height: 100%;">
-    <Navbar />
+    <div><Navbar /></div>
     <router-view></router-view>
     <Footer class="mt-auto" />
   </div>

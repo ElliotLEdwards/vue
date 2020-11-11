@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="d-flex justify-content-center">
         <form action="http://elliotedwards.com/pdf/CV.pdf">
             <button type="button submit" target="_blank" class="btn btn-outline-primary download_button">Download</button>
         </form>

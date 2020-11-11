@@ -12,6 +12,8 @@ import Cv from './components/Cv.vue'
 
 Vue.use(VueRouter)
 
+document.title = "Elliot's website"
+
 const routes = [
   {
     path: '/',

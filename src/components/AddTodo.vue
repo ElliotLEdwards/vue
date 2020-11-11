@@ -21,7 +21,7 @@ export default {
             title: ''
         }
     },
-    methods: {
+   methods: {
         addTodo(e) {
             e.preventDefault()
             if(this.title) {

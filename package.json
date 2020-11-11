@@ -17,6 +17,7 @@
     "core-js": "^3.6.4",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1",
+    "spotify-web-api-node": "^5.0.0",
     "uuid": "^8.0.0",
     "vue": "^2.6.11",
     "vue-pdf": "^4.1.0",
